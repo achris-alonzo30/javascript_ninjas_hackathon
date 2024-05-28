@@ -9,7 +9,78 @@
     <script type="module" src="./scripts/index.js" defer></script>
 </head>
 <body>
-    <header>
-        </header>
-    </body>
+    <header class="header">
+        <nav class="header__nav">
+            <!-- Logo Goes here or H2 instead -->
+            <img src="" alt="Javascript Ninjas Logo" class="header__nav--image" />
+            
+            <!-- Links  -->
+            <ul class="header__nav--lists">
+                <li class="header__nav--list">
+                    <a class="header__nav--links"></a>
+                </li>
+                <li class="header__nav--list">
+                    <a class="header__nav--links"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hero">
+        <section class="hero__section">
+            <article class="hero__section--left">
+                <!-- Headline -->
+                <h1 class="hero__section--headline"></h1>
+                <!-- Tagline -->
+                <p class="hero__section--tagline"></p>
+                <div class="form">
+                    <form class="form__action">
+                        <label for="questionCount" class="form__action--label">Question Count: </label>
+                        <input id="questionCount" name="questionCount" class="form__action--input" type="number" min="1" max="20" required />
+
+                        <label for="questionType" class="form__action--label">Question Type: </label>
+                        <select id="questionType" name="questionType" class="form__action--select">
+                            <option value="Select All">
+                                Select All
+                            </option>
+                            <option value="Multiple Choice">
+                                Multiple Choice
+                            </option>
+                            <option value="True or False">
+                                True or False
+                            </option>
+                        </select>
+
+                        <label id="difficulty" class="form__action--label">Difficulty</label>
+                        <select id="difficulty" name="difficulty" class="form__action--select">
+                            <option value="Random">
+                                Random
+                            </option>
+                            <option value="Easy">
+                                Easy
+                            </option>
+                            <option value="Medium">
+                                Medium
+                            </option>
+                            <option value="Hard">
+                                Hard
+                            </option>
+                        </select>
+
+                        <button type="submit" class="form__action--button">START</button>
+                    </form>
+                </div>
+            </article>
+            <article class="hero__section--right">
+                <!-- Hero image : save it in the assets -->
+                <img class="hero__section--image" src="./assets/" alt="Student Studying Computer Science" />
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+
+        </nav>
+    </footer>
+</body>
 </html>
