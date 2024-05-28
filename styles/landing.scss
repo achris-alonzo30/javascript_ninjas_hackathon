@@ -1,0 +1,74 @@
+@use "./partials/global" as *;
+
+.header {
+    display: flex;
+
+    &__nav {
+
+        &--image {
+
+        }
+
+        &--lists {
+
+        }
+
+        &--list {
+
+        }
+
+        &--link {
+
+        }
+    }
+    
+}
+
+.hero {
+    &__section {
+        &--right {
+
+        }
+
+        &--body {
+
+        }
+
+        &--headline {
+            
+        }
+
+        &--tagline {
+
+        }
+
+        &--left {
+
+        }
+
+        &--image {
+            
+        }
+    }
+}
+
+.form {
+    &__action {
+
+        &--label {
+
+        }
+
+        &--input {
+
+        }
+
+        &--select {
+        
+        }
+
+        &--button {
+
+        }
+    }
+}
