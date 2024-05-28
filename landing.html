@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script type="module" src="./scripts/index.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
             <!-- Logo Goes here or H2 instead -->
-            <img src="" alt="Javascript Ninjas Logo" class="header__nav--image" />
-            
+            <a href="./landing.html" class="header__nav--logo">
+                <img src="./assets/svg/code-logo.svg" alt="Javascript Ninjas Logo" class="header__nav--image" />
+                <h2 class="header__nav--heading">Tiny Techies Ninjas</h2>
+            </a>
             <!-- Links  -->
             <ul class="header__nav--lists">
                 <li class="header__nav--list">
-                    <a class="header__nav--links"></a>
+                    <a class="header__nav--links">About</a>
                 </li>
                 <li class="header__nav--list">
-                    <a class="header__nav--links"></a>
+                    <a class="header__nav--links">Start</a>
                 </li>
             </ul>
         </nav>
@@ -28,17 +32,25 @@
     <main class="hero">
         <section class="hero__section">
             <article class="hero__section--left">
-                <!-- Headline -->
-                <h1 class="hero__section--headline"></h1>
-                <!-- Tagline -->
-                <p class="hero__section--tagline"></p>
-                <div class="form">
-                    <form class="form__action">
-                        <label for="questionCount" class="form__action--label">Question Count: </label>
-                        <input id="questionCount" name="questionCount" class="form__action--input" type="number" min="1" max="20" required />
 
-                        <label for="questionType" class="form__action--label">Question Type: </label>
-                        <select id="questionType" name="questionType" class="form__action--select">
+                <hgroup class="hero__headline">
+                    <!-- Headline -->
+                    <h1 class="hero__headline--heading">Creating the next generation of software engineers.</h1>
+                    <!-- Tagline -->
+                    <p class="hero__headline--subheading">Coding the Future, One Engineer at a Time</p>
+                </hgroup>
+
+                <!-- Form section -->
+                <div class="hero__form">
+                    <form class="hero__form--action">
+                        <!-- Question Count Form -->
+                        <label for="questionCount" class="hero__form--label">Question Count: </label>
+                        <input id="questionCount" name="questionCount" class="hero__form--input" type="number" min="1"
+                            max="20" required />
+
+                        <!-- Question Type Form -->
+                        <label for="questionType" class="hero__form--label">Question Type: </label>
+                        <select id="questionType" name="questionType" class="hero__form--select">
                             <option value="Select All">
                                 Select All
                             </option>
@@ -50,8 +62,9 @@
                             </option>
                         </select>
 
-                        <label id="difficulty" class="form__action--label">Difficulty</label>
-                        <select id="difficulty" name="difficulty" class="form__action--select">
+                        <!-- Question Difficulty Form -->
+                        <label id="difficulty" class="hero__form--label">Difficulty</label>
+                        <select id="difficulty" name="difficulty" class="hero__form--select">
                             <option value="Random">
                                 Random
                             </option>
@@ -66,13 +79,16 @@
                             </option>
                         </select>
 
-                        <button type="submit" class="form__action--button">START</button>
+                        <!-- Question Submit Form -->
+                        <button type="submit" class="hero__form--button">START</button>
                     </form>
                 </div>
             </article>
+
+
             <article class="hero__section--right">
                 <!-- Hero image : save it in the assets -->
-                <img class="hero__section--image" src="./assets/" alt="Student Studying Computer Science" />
+                <img class="hero__section--image" src="./assets/svg/tech_kids.svg" alt="Student Studying Computer Science" />
             </article>
         </section>
     </main>
@@ -83,4 +99,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
