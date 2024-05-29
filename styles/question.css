@@ -40,6 +40,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
 .navbar__logo img {
   height: 2rem;
   width: 2rem;

@@ -40,6 +40,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
 .navbar__logo img {
   height: 2rem;
   width: 2rem;
@@ -191,7 +196,11 @@ a {
   cursor: pointer;
 }
 .quiz__container button {
+<<<<<<< HEAD
   background-color: #F1C40E;
+=======
+  background-color: #08007c;
+>>>>>>> farheen
   border: none;
   color: white;
   font-size: 1.2rem;
@@ -204,6 +213,11 @@ a {
   border-radius: 0 0 10px 10px;
 }
 .quiz__container button:hover {
+<<<<<<< HEAD
   background-color: #12a1f3;
+=======
+  color: #000;
+  background-color: #eeaf03;
+>>>>>>> farheen
   cursor: pointer;
 }/*# sourceMappingURL=quiz.css.map */

@@ -40,6 +40,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
 .navbar__logo img {
   height: 2rem;
   width: 2rem;
@@ -161,6 +166,7 @@ a {
 }
 
 .about {
+  background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
@@ -199,6 +205,7 @@ a {
   text-align: center;
   margin: 0 auto;
   line-height: 1.7;
+  font-size: 20px;
 }
 .about__links {
   margin: 15px 0;

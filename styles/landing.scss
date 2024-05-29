@@ -11,81 +11,50 @@
         }
 
         &--label {
+            font-size: 2rem;
+            color: #333;
+            display: block;
+            margin-bottom: 0.5rem;
         }
 
         &--input {
-            padding: 0.5rem;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+           
         }
 
-        &--select {
-            padding: 0.5rem;
+        &--select {  width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
         }
 
         &--button {
-            padding: 0.5rem;
+            padding: 1rem;
             border: none;
             background-color: #DB7A4E;
             border-radius: 20px;
             color: white;
+            font-size: 1.5rem;
+            &:hover {
+                background-color: #0056b3;
+              }
         }
     }
 
 
 }
 
-.hero__form--action {
-    display: flex;
-    // flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  
-    .card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(50% - 2rem);
-      margin: 1rem;
-  
-      .hero__form--label {
-        font-size: 1rem;
-        color: #333;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-  
-      .hero__form--input, .hero__form--select {
-        width: 100%;
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 0.25rem;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-      }
-  
-      .hero__form--button {
-        width: 100%;
-        padding: 0.75rem 1.5rem;
-        border: none;
-        border-radius: 0.25rem;
-        background-color: $cerulean;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: #0056b3;
-        }
-      }
-    }
-  }
-
 
   
   .hero {
-    // background-image: url("https://media.istockphoto.com/id/1232324930/vector/kid-programmer-learn-coding-on-computer-tablet-or-phone-child-create-code-or-program-of-game.jpg?s=612x612&w=0&k=20&c=oSiWKFT-eSyC5QjF4n1d3C5ijiI861bKrrD6AgUICkQ=");
+   
     
     background-image: url(../assets/pexels-artempodrez-7233099.jpg);
     background-color: #FEFAF5;

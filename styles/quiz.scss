@@ -40,7 +40,11 @@
 
 
         button {
+<<<<<<< HEAD
             background-color: #F1C40E;
+=======
+            background-color: #08007c;
+>>>>>>> farheen
             border: none;
             color: white;
             font-size: 1.2rem;
@@ -52,7 +56,12 @@
             padding: 7.5px;
             border-radius: 0 0 10px 10px;
             &:hover {
+<<<<<<< HEAD
                 background-color: #12a1f3;
+=======
+                color: #000;
+                background-color: #eeaf03;
+>>>>>>> farheen
                 cursor: pointer;
             }
         }

@@ -40,6 +40,14 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+<<<<<<< HEAD
+=======
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
+>>>>>>> farheen
 .navbar__logo img {
   height: 2rem;
   width: 2rem;
@@ -166,10 +174,17 @@ a {
   min-height: 100vh;
   width: 85vw;
   margin: 100px auto;
+<<<<<<< HEAD
   background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
 }
 .contact__image {
   background: url("../../assets/phone-solid.svg") center/cover no-repeat;
+=======
+  background: url("../assets/pexels-artempodrez-7233099.jpg");
+}
+.contact__image {
+  background: url("https://static.vecteezy.com/system/resources/previews/004/342/704/non_2x/children-fixing-a-robot-together-in-the-room-scene-free-vector.jpg") center/cover no-repeat;
+>>>>>>> farheen
 }
 .contact__content {
   background: #fff;
@@ -199,6 +214,21 @@ a {
   text-align: center;
   margin: 0 auto;
   line-height: 1.7;
+<<<<<<< HEAD
+=======
+  font-size: 20px;
+}
+.contact__content--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 40px 20px;
+}
+.contact__content--info p {
+  align-content: baseline;
+  font-size: 20px;
+>>>>>>> farheen
 }
 .contact__links {
   margin: 15px 0;

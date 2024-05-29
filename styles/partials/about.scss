@@ -3,18 +3,26 @@
 
 
 .about {
+    background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
     width: 85vw;
     margin: 100px auto;
+<<<<<<< HEAD
 background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
     &__image {
         // background: url("../../assets/class_picture.png") center/cover no-repeat;
         background: url("../../assets/phone-solid.svg") center/cover no-repeat;
+=======
+    &__image {
+       background: url("../../assets/kidteacher-1x.png") center/cover no-repeat;
+   
+>>>>>>> farheen
     }
 
     &__content {
+      
         background: #fff;
     display: flex;
     justify-content: center;
@@ -45,6 +53,7 @@ background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
             text-align: center;
             margin: 0 auto;
             line-height: 1.7;
+            font-size: 20px;
         }
 
      
