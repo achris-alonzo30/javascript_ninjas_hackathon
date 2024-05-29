@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+             <a href="/landing.html">
+              <img
+              src="../assets/svg/code-logo.svg"
+              alt="Javascript Ninjas Logo"
+              class="header__nav--image"
+            />
+             </a>
+                <a href="#">Tiny Techies Ninjas</a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">SignIn</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="quiz">
+        <div class="quiz__container">
+
+            <h2 id="quiz-question">
+                Question tag
+            </h2>
+    
+            <ul>
+    
+                <li>
+                    <input type="radio" class="answer" id="option-a" name="quiz-options">
+                    <label for="option-a" id="text_option_a"> Option A</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-b" name="quiz-options">
+                    <label for="option-b" id="text_option_b"> Option B</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-c" name="quiz-options">
+                    <label for="option-c" id="text_option_c"> Option C</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-d" name="quiz-options">
+                    <label for="option-d" id="text_option_d"> Option D</label>
+                </li>
+            </ul>
+    
+            <button id="submit">Submit</button>
+        </div>
+    
+    </section>
+    
+    <script
+        src="../scripts/quiz.js"
+    >
+    </script>
+</body>
+</html>
