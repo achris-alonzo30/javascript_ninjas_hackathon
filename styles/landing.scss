@@ -1,49 +1,5 @@
 @use "./partials/global" as *;
 
-.header {
-    display: flex;
-    height: 4rem;
-    padding: 1rem 6rem;
-    border-bottom: 1px solid black;
-    width: 100%;
-
-    &__nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-
-        &--logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        &--image {
-            height: 2rem;
-            width: 2rem;
-        }
-
-        &--heading {
-            font-size: 1rem;
-        }
-
-        &--lists {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 4rem;
-            list-style-type: none;
-        }
-
-        // &--list {}
-
-        // &--link {}
-    }
-
-}
-
 .hero {
     padding: 4rem 10rem;
 

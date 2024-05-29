@@ -1,1 +1,44 @@
 @use "./partials/global" as *;
+@use "./partials/colors" as *;
+
+.main {
+    margin: 0 auto;
+    &__flashcard {
+        padding: 10rem 4rem;
+    }
+
+
+}
+
+.questions {
+    padding: 1rem;
+    border: 1px solid $gray;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+
+.question {
+    padding: 4rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+
+    &__boolean {
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        &--true,
+        &--false {
+            width: 6.25rem;
+            height: 3.125rem;
+            border-radius: 0.5rem;
+            background-color: $main-color;
+            color: whitesmoke;
+            
+        }
+    }
+}
