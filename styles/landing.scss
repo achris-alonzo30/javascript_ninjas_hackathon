@@ -23,6 +23,10 @@
 
         &--button {
             padding: 0.5rem;
+            border: none;
+            background-color: #DB7A4E;
+            border-radius: 20px;
+            color: white;
         }
     }
 
@@ -81,8 +85,11 @@
 
   
   .hero {
+    // background-image: url("https://media.istockphoto.com/id/1232324930/vector/kid-programmer-learn-coding-on-computer-tablet-or-phone-child-create-code-or-program-of-game.jpg?s=612x612&w=0&k=20&c=oSiWKFT-eSyC5QjF4n1d3C5ijiI861bKrrD6AgUICkQ=");
+    
+    background-image: url(../assets/pexels-artempodrez-7233099.jpg);
     background-color: #FEFAF5;
-    padding: 50px 20px;
+    padding: 100px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,28 +97,31 @@ flex-direction: column;
     &__container {
         // width: 50%;
         display: flex;
+        align-items: center;
     }
 
     &__content {
-        width: 100%;
+        // width: 100%;
+        width: 60%;
+    padding-top: 50px;
 
         h1 {
-            padding: 10px;
-            color: #335576;
-            font-size: 33px;
-            font-weight: 700;
+            color: #ecf2f7;
+    font-size: 58px;
+            font-weight: 600;
         }
 
         p {
-            color: #335576;
-            margin: 27px 5px;
+            color: #eaedef;
+            padding-top: 30px;
+            font-size: 28px;
         }
 
         button {
             background-color: #DB7A4E;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 10px 47px;
             cursor: pointer;
             margin-top: 20px;
             border-radius: 20px;

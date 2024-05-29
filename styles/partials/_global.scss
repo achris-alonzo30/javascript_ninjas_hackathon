@@ -69,12 +69,14 @@ a {
 
 // }
 .navbar {
-    background: $red;
+  width: 100%;
+    background: $navbg;
     font-family: calibri;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
     padding-top: 10px;
+    position: fixed;
 
     &__container {
         display: flex;
@@ -219,6 +221,7 @@ a {
   
 
 .footer{
+    
     background-color:$black ;
     text-align: center;
     color:$gray;

@@ -26,12 +26,14 @@ a {
 }
 
 .navbar {
-  background: #AD2831;
+  width: 100%;
+  background: #797373;
   font-family: calibri;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
   padding-top: 10px;
+  position: fixed;
 }
 .navbar__container {
   display: flex;

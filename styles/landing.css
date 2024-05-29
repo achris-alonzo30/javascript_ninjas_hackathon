@@ -26,12 +26,14 @@ a {
 }
 
 .navbar {
-  background: #AD2831;
+  width: 100%;
+  background: #797373;
   font-family: calibri;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
   padding-top: 10px;
+  position: fixed;
 }
 .navbar__container {
   display: flex;
@@ -174,6 +176,10 @@ a {
 }
 .hero__form--button {
   padding: 0.5rem;
+  border: none;
+  background-color: #DB7A4E;
+  border-radius: 20px;
+  color: white;
 }
 
 .hero__form--action {
@@ -220,8 +226,9 @@ a {
 }
 
 .hero {
+  background-image: url(../assets/pexels-artempodrez-7233099.jpg);
   background-color: #FEFAF5;
-  padding: 50px 20px;
+  padding: 100px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -229,25 +236,27 @@ a {
 }
 .hero__container {
   display: flex;
+  align-items: center;
 }
 .hero__content {
-  width: 100%;
+  width: 60%;
+  padding-top: 50px;
 }
 .hero__content h1 {
-  padding: 10px;
-  color: #335576;
-  font-size: 33px;
-  font-weight: 700;
+  color: #ecf2f7;
+  font-size: 58px;
+  font-weight: 600;
 }
 .hero__content p {
-  color: #335576;
-  margin: 27px 5px;
+  color: #eaedef;
+  padding-top: 30px;
+  font-size: 28px;
 }
 .hero__content button {
   background-color: #DB7A4E;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 47px;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 20px;

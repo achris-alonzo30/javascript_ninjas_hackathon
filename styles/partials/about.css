@@ -26,12 +26,14 @@ a {
 }
 
 .navbar {
-  background: #AD2831;
+  width: 100%;
+  background: #797373;
   font-family: calibri;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
   padding-top: 10px;
+  position: fixed;
 }
 .navbar__container {
   display: flex;
@@ -161,12 +163,12 @@ a {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
+  min-height: 100vh;
   width: 85vw;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 .about__image {
-  background: url("../../assets/class_picture.png") center/cover no-repeat;
+  background: url("../../assets/kidteacher-1x.png") center/cover no-repeat;
 }
 .about__content {
   background: #fff;
@@ -176,6 +178,7 @@ a {
   align-items: center;
 }
 .about__content h2 {
+  padding-top: 40px;
   text-transform: uppercase;
   font-size: 36px;
   letter-spacing: 6px;
@@ -185,7 +188,7 @@ a {
   height: 0.5px;
   width: 80px;
   background: #777;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 .about__content p {
   padding-bottom: 15px;
@@ -213,10 +216,10 @@ a {
   text-decoration: none;
 }
 .about__links ul li:hover {
-  border-color: #06d6a0;
+  border-color: #06a5d6;
 }
 .about__links ul li:hover a {
-  color: #06d6a0;
+  color: #06acd6;
 }
 .about__vertical-line {
   height: 30px;
@@ -238,7 +241,7 @@ a {
   opacity: 0.8;
 }
 .about__icons li i:hover {
-  color: #06d6a0;
+  color: #03a5ce;
 }
 @media (max-width: 992px) {
   .about {
