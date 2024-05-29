@@ -1,21 +1,22 @@
-@use "../partials/global" as *;
-@use '../partials/colors' as *;
+@use "../styles/partials/global" as *;
+@use '../styles/partials/colors' as *;
 
 
-.about {
-    background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
+
+.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
     width: 85vw;
     margin: 100px auto;
+   background: url("../assets/pexels-artempodrez-7233099.jpg");
     &__image {
-       background: url("../../assets/kidteacher-1x.png") center/cover no-repeat;
-   
+        // background: url("../../assets/class_picture.png") center/cover no-repeat;
+       // background: url("https://media.istockphoto.com/id/1232324930/vector/kid-programmer-learn-coding-on-computer-tablet-or-phone-child-create-code-or-program-of-game.jpg?s=612x612&w=0&k=20&c=oSiWKFT-eSyC5QjF4n1d3C5ijiI861bKrrD6AgUICkQ=") center/cover no-repeat;
+       background: url("https://static.vecteezy.com/system/resources/previews/004/342/704/non_2x/children-fixing-a-robot-together-in-the-room-scene-free-vector.jpg") center/cover no-repeat;
     }
 
     &__content {
-      
         background: #fff;
     display: flex;
     justify-content: center;
@@ -48,6 +49,23 @@
             line-height: 1.7;
             font-size: 20px;
         }
+
+
+    &--info{
+        display: flex;
+       
+     
+         flex-direction: column;
+         align-items: center;
+         gap: 7px;
+         padding: 40px 20px;
+        p{
+     align-content: baseline;
+font-size: 20px;
+        }
+   }
+
+      
 
      
     }

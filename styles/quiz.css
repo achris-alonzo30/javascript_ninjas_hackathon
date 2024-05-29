@@ -40,6 +40,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
 .navbar__logo img {
   height: 2rem;
   width: 2rem;
@@ -158,4 +163,53 @@ a {
 }
 .footer p {
   font-size: 1.5rem;
+}
+
+.quiz {
+  background-image: url(../assets/pexels-artempodrez-7233099.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.quiz__container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  position: relative;
+}
+.quiz__container h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+}
+.quiz__container form {
+  list-style: none;
+  margin-left: 30px;
+}
+.quiz__container li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+.quiz__container button {
+  background-color: #08007c;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 7.5px;
+  border-radius: 0 0 10px 10px;
+}
+.quiz__container button:hover {
+  color: #000;
+  background-color: #eeaf03;
+  cursor: pointer;
 }/*# sourceMappingURL=quiz.css.map */
