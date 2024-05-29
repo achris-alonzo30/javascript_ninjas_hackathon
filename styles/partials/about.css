@@ -172,10 +172,9 @@ a {
   min-height: 100vh;
   width: 85vw;
   margin: 100px auto;
-  background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
 }
 .about__image {
-  background: url("../../assets/phone-solid.svg") center/cover no-repeat;
+  background: url("../../assets/kidteacher-1x.png") center/cover no-repeat;
 }
 .about__content {
   background: #fff;

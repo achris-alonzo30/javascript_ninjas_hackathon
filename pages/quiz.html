@@ -1,93 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiny Tech Ninjas-Quiz Your Knowledge</title>
-    <link rel="stylesheet" href="../styles/quiz.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+<body>
+
     <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__logo">
-          <a href="/landing.html">
-            <img
+        <div class="navbar__container">
+            <div class="navbar__logo">
+             <a href="/landing.html">
+              <img
               src="../assets/svg/code-logo.svg"
               alt="Javascript Ninjas Logo"
               class="header__nav--image"
             />
-          </a>
-          <a href="/landing.html">Tiny Tech Ninjas</a>
+             </a>
+                <a href="#">Tiny Tech Ninjas</a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">SignIn</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Register</a></li>
+            </ul>
         </div>
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a class="navbar__link" href="../landing.html">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./AboutUs.html">About Us</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./Contact.html">Contact Us</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./Contact.html">SignIn</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./Contact.html">Register</a>
-          </li>
-        </ul>
-      </div>
     </nav>
     <section class="quiz">
-      <div class="quiz__container">
-        <h2 id="quiz-question">Question tag</h2>
+        <div class="quiz__container">
 
-        <form id="form">
-          <!-- Make each input a button instead -->
-          <div class="optionA">
-            <input
-              type="radio"
-              class="answer"
-              id="option_a"
-              name="quizOptions"
-            />
-            <label for="option_a" class="show_answer">Hello</label>
-          </div>
-          <div class="optionB">
-            <input
-              type="radio"
-              class="answer"
-              id="option_b"
-              name="quizOptions"
-            />
-            <label for="option_b" class="show_answer">there</label>
-          </div>
-          <div class="optionC">
-            <input
-              type="radio"
-              class="answer"
-              id="option_c"
-              name="quizOptions"
-            />
-            <label for="option_c" class="show_answer">you</label>
-          </div>
-          <div class="optionD">
-            <input
-              type="radio"
-              class="answer"
-              id="option_d"
-              name="quizOptions"
-            />
-            <label for="option_d" class="show_answer">!</label>
-          </div>
+            <h2 id="quiz-question">
+                Question tag
+            </h2>
+    
+      <form id="form">
+                <!-- Make each input a button instead -->
+                <div class="optionA">
+                    <input type="radio" class="answer" id="option_a" name="quizOptions" />
+                    <label for="option_a" class="show_answer">Hello</label>
+                </div>
+                <div class="optionB">
+                    <input type="radio" class="answer" id="option_b" name="quizOptions" />
+                    <label for="option_b" class="show_answer">there</label>
+                </div>
+                <div class="optionC">
+                    <input type="radio" class="answer" id="option_c" name="quizOptions" />
+                    <label for="option_c" class="show_answer">you</label>
+                </div>
+                <div class="optionD">
+                    <input type="radio" class="answer" id="option_d" name="quizOptions" />
+                    <label for="option_d" class="show_answer">!</label>
+                </div>
 
-          <button>SHOW ANSWER</button>
-        </form>
-
-        <!-- <button id="submit">Submit</button> -->
-      </div>
+                <button>SHOW ANSWER</button>
+            </form>
+    
+            <!-- <button id="submit">Submit</button> -->
+        </div>
+    
     </section>
-
-    <script src="../scripts/quiz.js"></script>
-  </body>
+    
+    <script
+        src="../scripts/quiz.js"
+    >
+    </script>
+</body>
 </html>
