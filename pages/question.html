@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiny Tech Ninjas - Question</title>
     <link rel="stylesheet" href="../styles/question.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script type="module" src="../scripts/question.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <div class="navbar__logo">
-             <a href="/landing.html">
-              <img
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="/landing.html">
+            <img
               src="../assets/svg/code-logo.svg"
               alt="Javascript Ninjas Logo"
               class="header__nav--image"
             />
-             </a>
-                <a href="#">Tiny Techies Ninjas</a>
-            </div>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
-                <button class="navbar__button"><a class="navbar__link" href="#">SignIn</a></button>
-                <button class="navbar__button"><a class="navbar__link" href="#">SignUp</a></button>
-            </ul>
+          </a>
+          <a href="#">Tiny Techies Ninjas</a>
         </div>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Contact Us</a>
+          </li>
+          <button class="navbar__button">
+            <a class="navbar__link" href="#">SignIn</a>
+          </button>
+          <button class="navbar__button">
+            <a class="navbar__link" href="#">SignUp</a>
+          </button>
+        </ul>
+      </div>
     </nav>
-    <main class="main">
-        <section class="main__flashcard">
-            <article class="questions">
-                <div class="question">
-                    <h2 class="question__heading">A Boolean value of &quot;0&quot; represents which of these words?</h2>
-                    <form id="answer" class="question__boolean" method="POST">
-                        <input class="question__boolean--true" type="button" value="True" />
-                        <p>or</p>
-                        <input class="question__boolean--false" type="button" value="False" />
-                        <!-- <div>
-                        <p></p>
-                        <p></p>
-                        </div> -->
-                    </form>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
+    <main class="quiz">
+      <h1 class="quiz__title">Multiple-Choice Quiz</h1>
+      <section
+        class="quiz_section quiz_section--questions"
+        id="question-section"
+      ></section>
 
-    </footer>
-</body>
+      <section class="quiz_section quiz_section--answers" id="answer-section">
+        <div class="quiz__multiple-choice" id="multiple-choice">
+          <div class="quiz__choices" id="choices">
+            <div class="quiz_choice quiz_choice--hidden" id="choice-1">
+              <label class="quiz__label" for="answer-1">
+                A.<span class="quiz__answer-text" id="answer-text-1"></span>
+              </label>
+              <input
+                class="quiz__input"
+                type="radio"
+                name="choices"
+                id="answer-1"
+                value="1"
+              />
+            </div>
+
+            <div class="quiz_choice quiz_choice--hidden" id="choice-2">
+              <label class="quiz__label" for="answer-2">
+                B.<span class="quiz__answer-text" id="answer-text-2"></span>
+              </label>
+              <input
+                class="quiz__input"
+                type="radio"
+                name="choices"
+                id="answer-2"
+                value="2"
+              />
+            </div>
+
+            <div class="quiz_choice quiz_choice--hidden" id="choice-3">
+              <label class="quiz__label" for="answer-3">
+                C.<span class="quiz__answer-text" id="answer-text-3"></span>
+              </label>
+              <input
+                class="quiz__input"
+                type="radio"
+                name="choices"
+                id="answer-3"
+                value="3"
+              />
+            </div>
+
+            <div class="quiz_choice quiz_choice--hidden" id="choice-4">
+              <label class="quiz__label" for="answer-4">
+                D.<span class="quiz__answer-text" id="answer-text-4"></span>
+              </label>
+              <input
+                class="quiz__input"
+                type="radio"
+                name="choices"
+                id="answer-4"
+                value="4"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz__button-container">
+          <button class="quiz__button" id="submit-choice">Submit</button>
+          <button class="quiz_button quiz_button--hidden" id="next-question">
+            Next Question
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
