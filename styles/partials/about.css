@@ -158,108 +158,116 @@ a {
   font-size: 1.5rem;
 }
 
-.hero__form {
-  width: 50%;
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
 }
-.hero__form--action {
+.about__image {
+  background: url("../../assets/class_picture.png") center/cover no-repeat;
+}
+.about__content {
+  background: #fff;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.hero__form--input {
-  padding: 0.5rem;
-}
-.hero__form--select {
-  padding: 0.5rem;
-}
-.hero__form--button {
-  padding: 0.5rem;
-}
-
-.hero__form--action {
-  display: flex;
-  gap: 1rem;
   justify-content: center;
-}
-.hero__form--action .card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(50% - 2rem);
-  margin: 1rem;
-}
-.hero__form--action .card .hero__form--label {
-  font-size: 1rem;
-  color: #333;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.hero__form--action .card .hero__form--input, .hero__form--action .card .hero__form--select {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-.hero__form--action .card .hero__form--button {
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.25rem;
-  background-color: #1282A2;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.hero__form--action .card .hero__form--button:hover {
-  background-color: #0056b3;
-}
-
-.hero {
-  background-color: #FEFAF5;
-  padding: 50px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
-.hero__container {
-  display: flex;
+.about__content h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
 }
-.hero__content {
-  width: 100%;
+.about__content span {
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
 }
-.hero__content h1 {
-  padding: 10px;
-  color: #335576;
-  font-size: 33px;
-  font-weight: 700;
+.about__content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
 }
-.hero__content p {
-  color: #335576;
-  margin: 27px 5px;
+.about__links {
+  margin: 15px 0;
 }
-.hero__content button {
-  background-color: #DB7A4E;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 20px;
-  border-radius: 20px;
+.about__links ul li {
+  border: 0.5px solid #777;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 160px;
+  text-align: center;
 }
-.hero__content button__link {
+.about__links ul li a {
+  text-transform: uppercase;
+  color: #777;
   text-decoration: none;
-  color: white;
 }
-.hero__image-container {
-  width: 50%;
+.about__links ul li:hover {
+  border-color: #06d6a0;
 }
-.hero__image-container img {
-  max-width: 100%;
-  height: auto;
-}/*# sourceMappingURL=landing.css.map */
+.about__links ul li:hover a {
+  color: #06d6a0;
+}
+.about__vertical-line {
+  height: 30px;
+  width: 0.5px;
+  background: #777;
+  margin: 0 auto;
+}
+.about__icons {
+  display: flex;
+  padding: 15px 0;
+  list-style: none;
+}
+.about__icons li {
+  padding: 5px;
+  margin: 5px;
+}
+.about__icons li i {
+  font-size: 26px;
+  opacity: 0.8;
+}
+.about__icons li i:hover {
+  color: #06d6a0;
+}
+@media (max-width: 992px) {
+  .about {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .about__image {
+    height: 100vh;
+  }
+  .about__content {
+    height: 100vh;
+  }
+  .about__content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .about__content span {
+    margin: 20px 0;
+  }
+  .about__content p {
+    font-size: 14px;
+  }
+  .about__content__links {
+    margin: 5px 0;
+  }
+  .about__content__links li {
+    padding: 6px 10px;
+  }
+  .about__content__icons li i {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=about.css.map */

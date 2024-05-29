@@ -9,24 +9,27 @@
     <script type="module" src="../scripts/question.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <!-- Logo Goes here or H2 instead -->
-            <a href="./landing.html" class="header__nav--logo">
-                <img src="../assets/svg/code-logo.svg" alt="Javascript Ninjas Logo" class="header__nav--image" />
-                <h2 class="header__nav--heading">Tiny Techies Ninjas</h2>
-            </a>
-            <!-- Links  -->
-            <ul class="header__nav--lists">
-                <li class="header__nav--list">
-                    <a class="header__nav--links">About</a>
-                </li>
-                <li class="header__nav--list">
-                    <a class="header__nav--links">Start</a>
-                </li>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+             <a href="/landing.html">
+              <img
+              src="../assets/svg/code-logo.svg"
+              alt="Javascript Ninjas Logo"
+              class="header__nav--image"
+            />
+             </a>
+                <a href="#">Tiny Techies Ninjas</a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
+                <button class="navbar__button"><a class="navbar__link" href="#">SignIn</a></button>
+                <button class="navbar__button"><a class="navbar__link" href="#">SignUp</a></button>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main class="main">
         <section class="main__flashcard">
             <article class="questions">
