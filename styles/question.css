@@ -1,1 +1,26 @@
-/*# sourceMappingURL=question.css.map */
+@font-face {
+  font-family: "Indie Flower";
+  src: url("../../assets/font/IndieFlower.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: "Indie Flower";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}/*# sourceMappingURL=question.css.map */
