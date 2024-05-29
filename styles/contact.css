@@ -40,14 +40,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-=======
 .navbar__logo {
   display: flex;
   justify-content: space-between;
   width: 21%;
 }
->>>>>>> farheen
 .navbar__logo img {
   height: 2rem;
   width: 2rem;
@@ -92,7 +89,8 @@ a {
   padding: 2rem;
   background-color: #f9f9f9;
 }
-.hero__section--left, .hero__section--right {
+.hero__section--left,
+.hero__section--right {
   flex: 1;
   margin: 1rem;
 }
@@ -128,7 +126,8 @@ a {
   font-size: 1rem;
   color: #333;
 }
-.hero__section--left .hero__form--action .hero__form--input, .hero__section--left .hero__form--action .hero__form--select {
+.hero__section--left .hero__form--action .hero__form--input,
+.hero__section--left .hero__form--action .hero__form--select {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -159,9 +158,9 @@ a {
 }
 
 .footer {
-  background-color: #28262C;
+  background-color: #28262c;
   text-align: center;
-  color: #EDF6F9;
+  color: #edf6f9;
   padding: 2rem;
 }
 .footer p {
@@ -174,17 +173,11 @@ a {
   min-height: 100vh;
   width: 85vw;
   margin: 100px auto;
-<<<<<<< HEAD
-  background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
-}
-.contact__image {
-  background: url("../../assets/phone-solid.svg") center/cover no-repeat;
-=======
   background: url("../assets/pexels-artempodrez-7233099.jpg");
 }
 .contact__image {
-  background: url("https://static.vecteezy.com/system/resources/previews/004/342/704/non_2x/children-fixing-a-robot-together-in-the-room-scene-free-vector.jpg") center/cover no-repeat;
->>>>>>> farheen
+  background: url("https://static.vecteezy.com/system/resources/previews/004/342/704/non_2x/children-fixing-a-robot-together-in-the-room-scene-free-vector.jpg")
+    center/cover no-repeat;
 }
 .contact__content {
   background: #fff;
@@ -214,8 +207,6 @@ a {
   text-align: center;
   margin: 0 auto;
   line-height: 1.7;
-<<<<<<< HEAD
-=======
   font-size: 20px;
 }
 .contact__content--info {
@@ -228,7 +219,6 @@ a {
 .contact__content--info p {
   align-content: baseline;
   font-size: 20px;
->>>>>>> farheen
 }
 .contact__links {
   margin: 15px 0;
@@ -304,4 +294,4 @@ a {
   .contact__content__icons li i {
     font-size: 15px;
   }
-}/*# sourceMappingURL=contact.css.map */
+} /*# sourceMappingURL=contact.css.map */

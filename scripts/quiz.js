@@ -1,95 +1,124 @@
-const quiz = [
-  {
-    question: "What is the most used programming language in 2021?",
-    ans1text: "Java",
-    ans2text: "C",
-    ans3text: "Python",
-    ans4text: "JavaScript",
-    answer: "JavaScript",
-  },
-  {
-    question: "Who is the President of US?",
-    ans1text: "Joe Biden",
-    ans2text: "Donald Trump",
-    ans3text: "Barack Obama",
-    ans4text: "George Bush",
-    answer: "Joe Biden",
-  },
-  {
-    question: "What does HTML stand for?",
-    ans1text: "Hypertext Markup Language",
-    ans2text: "Cascading Style Sheet",
-    ans3text: "Jason Object Notation",
-    ans4text: "Helicopters Terminals Motorboats Lamborginis",
-    answer: "Hypertext Markup Language",
-  },
-  {
-    question: "What year was JavaScript launched?",
-    ans1text: "1996",
-    ans2text: "1995",
-    ans3text: "1994",
-    ans4text: "none of the above",
-    answer: "1995",
-  },
-];
-const question = document.getElementById("quiz-question");
-console.log(question);
-console.log(question.textContent);
-const option_a = document.getElementById("text_option_a");
-const option_b = document.getElementById("text_option_b");
-const option_c = document.getElementById("text_option_c");
-const option_d = document.getElementById("text_option_d");
-const answerElement = document.querySelectorAll(".answer");
-console.log(option_a);
-console.log(option_b);
-console.log(option_c);
-console.log(option_d);
-console.log(option_a.textContent);
-console.log(option_b.textContent);
-console.log(option_c.textContent);
-console.log(option_d.textContent);
+const { results: questions } = JSON.parse(localStorage.getItem("triviaQuestions"));
+console.log(questions)
 
-const submit = document.getElementById("submit");
 
-let currentQuestion = 0;
-let score = 0;
+const quizContainerEl = document.querySelector(".quiz__container");
+let currentIndexQuestion = 0; // Keep track on the index of the current question
+function renderQuestion(q, i) {
+    // Question Content
+    const questionEl = document.getElementById("quiz-question");
+    questionEl.textContent = q.question;
 
-console.log(quiz[currentQuestion].question);
-console.log(quiz[currentQuestion].ans1text);
-console.log(quiz[currentQuestion].ans2text);
-console.log(quiz[currentQuestion].ans3text);
-console.log(quiz[currentQuestion].ans4text);
+    // Choices Content
+    let multiple;
 
-question.textContent = quiz[currentQuestion].question;
-option_a.textContent = quiz[currentQuestion].ans1text;
-option_b.textContent = quiz[currentQuestion].ans2text;
-option_c.textContent = quiz[currentQuestion].ans3text;
-option_d.textContent = quiz[currentQuestion].ans4text;
+    if (q.type === "multiple") {
+        multiple = [q.correct_answer, ...q.incorrect_answers];
 
-submit.addEventListener("click", () => {
-  const checkedAns = document.querySelector('input[type="radio"]:checked');
-  console.log(checkedAns);
-  // console.log(checkedAns.nextElementSibling.textContent);
-  if (checkedAns === null) {
-    alert("Please select an answer");
-  } else {
-    if (
-      checkedAns.nextElementSibling.textContent === quiz[currentQuestion].answer
-    ) {
-      score++;
+        // shuffle the choices
+        multiple.sort(() => Math.random() - 0.5);
+
+        const labelIds = ["text_answer_a", "text_answer_b", "text_answer_c", "text_answer_d"];
+        const optionIds = ["option_a", "option_b", "option_c", "option_d"]
+        multiple.forEach((option, index) => {
+            const labelEl = document.querySelector(`.${labelIds[index]}`);
+            const optionEl = document.querySelector(`#${optionIds[index]}`);
+            optionEl.setAttribute("value", option)
+            labelEl.textContent = option;
+        })
     }
 
-    currentQuestion++;
-    if (currentQuestion < quiz.length) {
-      question.textContent = quiz[currentQuestion].question;
-      option_a.textContent = quiz[currentQuestion].ans1text;
-      option_b.textContent = quiz[currentQuestion].ans2text;
-      option_c.textContent = quiz[currentQuestion].ans3text;
-      option_d.textContent = quiz[currentQuestion].ans4text;
-      checkedAns.checked = false;
+    if (q.type === "boolean") {
+        const optionA = document.getElementById("option_a");
+        optionA.value = "True";
+        const labelA = document.querySelector(".text_answer_a");
+        labelA.textContent = "True";
+
+        const optionB = document.getElementById("option_b");
+        optionB.value = "False";
+        const labelB = document.querySelector(".text_answer_b");
+        labelB.textContent = "False";
+
+        // Hide the other 2 options if the question type is boolean
+        document.querySelector(".optionC").style.display = "none";
+        document.querySelector(".optionD").style.display = "none";
     } else {
-      alert("Your score is " + score + " out of " + quiz.length);
-      location.reload();
+        // Show all options for multiple choice questions
+        document.querySelector(".optionC").style.display = "block";
+        document.querySelector(".optionD").style.display = "block";
     }
-  }
-});
+
+}
+
+// Function for resetting the questions and choices for the next question
+function clearContent() {
+    const labelIds = ["text_answer_a", "text_answer_b", "text_answer_c", "text_answer_d"];
+    const optionIds = ["option_a", "option_b", "option_c", "option_d"]
+
+    labelIds.forEach(id => {
+        const labelEl = document.querySelector(`.${id}`);
+        labelEl.textContent = '';
+        labelEl.removeAttribute("style")
+    });
+    optionIds.forEach(id => {
+        const optionEl = document.querySelector(`#${id}`);
+        optionEl.checked = false;
+        optionEl.removeAttribute("value");
+    });
+}
+
+function showCorrectAnswer(correctAnswer) {
+    const labelIds = ["text_answer_a", "text_answer_b", "text_answer_c", "text_answer_d"];
+    labelIds.forEach(id => {
+        const labelEl = document.querySelector(`.${id}`);
+
+        // Apply styles based on the user results
+        if (labelEl.textContent === correctAnswer) {
+            labelEl.style.color = "#0B6E4F";
+        } else {
+            labelEl.style.color = "#d62828";
+        }
+    });
+}
+
+function handleNextQuestion() {
+    // Clear the previous questions and answers
+    clearContent();
+
+    // Increment the questionIndex tally
+    currentIndexQuestion++;
+    
+    // Checks if we still have more questions
+    if (currentIndexQuestion < questions.length) {
+        renderQuestion(questions[currentIndexQuestion]);
+    } else {
+        alert("Quiz completed!");
+        // Redirect user back to home after quiz completed in 3 secs
+        setTimeout(window.location.href = "../landing.html", 3000 )
+        
+    }
+}
+
+function chooseAnswer() {
+    const form = document.getElementById("form")
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const correctAnswer = questions[currentIndexQuestion].correct_answer;
+
+        // Call the function to show the correct answer
+        showCorrectAnswer(correctAnswer)
+
+        // Set timeout for 3 seconds before the next qustion comes
+        setTimeout(handleNextQuestion, 3000);
+    })
+}
+
+function main() {
+    renderQuestion(questions[currentIndexQuestion]);
+    chooseAnswer();
+}
+
+main();
+
+// https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=boolean
+// https://opentdb.com/api.php?amount=20&category=18&difficulty=hard&type=boolean
