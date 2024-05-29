@@ -10,43 +10,57 @@
   </head>
 
   <body>
-
-      <nav class="navbar">
-        <div class="navbar__container">
-            <div class="navbar__logo">
-             <a href="/landing.html">
-              <img
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="/landing.html">
+            <img
               src="./assets/svg/code-logo.svg"
               alt="Javascript Ninjas Logo"
               class="header__nav--image"
             />
-             </a>
-                <a href="#">Tiny Techies Ninjas</a>
-            </div>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a class="navbar__link" href="./landing.html">Home</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="../pages/AboutUs.html">About Us</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">SignIn</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">Register</a></li>
-                <!-- <button class="navbar__button"><a class="navbar__link" href="#">SignIn</a></button>
-                <button class="navbar__button"><a class="navbar__link" href="#">SignUp</a></button> -->
-            </ul>
+          </a>
+          <a href="#">Tiny Techies Ninjas</a>
         </div>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./landing.html">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../pages/AboutUs.html">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Contact Us</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">SignIn</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Register</a>
+          </li>
+          <!-- <button class="navbar__button"><a class="navbar__link" href="#">SignIn</a></button>
+                <button class="navbar__button"><a class="navbar__link" href="#">SignUp</a></button> -->
+        </ul>
+      </div>
     </nav>
     <section class="hero">
       <div class="hero__container">
-          <div class="hero__content">
-              <h1 class="hero__title">Creating the next generation of software engineers.</h1>
-              <p class="hero__subtitle">Coding the Future, One Engineer at a Time</p>
-            
-          </div>
-          <div class="hero__image-container">
-              <img class="hero__image" src="./assets/—Pngtree—kids learning coding_7515253.png" alt="Student Studying Computer Science">
-          </div>
-         
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Creating the next generation of software engineers.
+          </h1>
+          <p class="hero__subtitle">
+            Coding the Future, One Engineer at a Time
+          </p>
+        </div>
+        <div class="hero__image-container">
+          <img
+            class="hero__image"
+            src="./assets/—Pngtree—kids learning coding_7515253.png"
+            alt="Student Studying Computer Science"
+          />
+        </div>
       </div>
-
 
       <div class="hero__form">
         <form class="hero__form--action">
@@ -79,14 +93,8 @@
           </select>
 
           <!-- Question Difficulty Form -->
-          <label id="difficulty" class="hero__form--label"
-            >Difficulty</label
-          >
-          <select
-            id="difficulty"
-            name="difficulty"
-            class="hero__form--select"
-          >
+          <label id="difficulty" class="hero__form--label">Difficulty</label>
+          <select id="difficulty" name="difficulty" class="hero__form--select">
             <option value="all">Any Difficulty</option>
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
@@ -94,19 +102,18 @@
           </select>
 
           <!-- Question Submit Form -->
-          <button type="submit" class="hero__form--button">START</button>
+          <button type="submit" class="hero__form--button">
+            <a href="../pages/quiz.html"> START</a>
+          </button>
         </form>
       </div>
-  </section>
-  
-   
+    </section>
+
     <footer class="footer">
-      
-  
       <!-- <a class="footer__logo" href="index.html"><img class="header__logo"   src="./assets/svg/code-logo.svg" alt ="logo"></a>
       -->
-      <p>copyright &copy; Lonz and Farheen 2024 Hackathon</p>
+      <p>Copyright &copy; Lonz and Farheen 2024 Hackathon</p>
       <p></p>
-  </footer>
+    </footer>
   </body>
 </html>

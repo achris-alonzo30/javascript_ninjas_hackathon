@@ -1,17 +1,19 @@
-@use "../partials/global" as *;
-@use '../partials/colors' as *;
+@use "../styles/partials/global" as *;
+@use '../styles/partials/colors' as *;
 
 
-.about {
+
+.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
     width: 85vw;
     margin: 100px auto;
-background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
+ background-image: url("../../assets/pexels-artempodrez-7233099.jpg");
     &__image {
         // background: url("../../assets/class_picture.png") center/cover no-repeat;
         background: url("../../assets/phone-solid.svg") center/cover no-repeat;
+       
     }
 
     &__content {

@@ -20,7 +20,7 @@ async function generateQuestions(url) {
             localStorage.setItem("triviaQuestions", JSON.stringify(questions));
             
             // After the questions has been generated push the user to the other page
-            window.location.href = "./pages/question.html"; 
+            window.location.href = "./pages/quiz.html"; 
         }
         
     } catch (error) {
